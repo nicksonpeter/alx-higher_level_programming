@@ -4,9 +4,9 @@
 /**
  * check_cycle - checking cycles
  * @list: value passed to the function
- * Return: value
+ *
+ * Return: 0 if no cycle, 1 if there is
  */
-
 int check_cycle(listint_t *list)
 {
 	listint_t *back = list;
@@ -22,6 +22,6 @@ int check_cycle(listint_t *list)
 		if (back == front)
 			return (1);
 	}
-
+	return (0);
 }
 
